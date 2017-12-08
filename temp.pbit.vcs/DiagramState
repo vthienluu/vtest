@@ -5,8 +5,8 @@
       "TableKey": "Tables\\8c11f5cc-edd7-4da8-a5f9-625dfaa5f0db",
       "Height": 150,
       "Width": 200,
-      "Left": 398.7850163888452,
-      "Top": 695.2435371554603
+      "Left": 621.7850163888452,
+      "Top": 728.2435371554603
     },
     {
       "TableKey": "Tables\\521f2c2d-6773-496d-ba4e-e6c676ca87fa",
@@ -14,13 +14,6 @@
       "Width": 200,
       "Left": 629.6043713974768,
       "Top": 557.2509552550432
-    },
-    {
-      "TableKey": "Tables\\4dffb944-534f-4ad4-aac8-c4c23e41ff1b",
-      "Height": 150,
-      "Width": 200,
-      "Left": 557.2499491521282,
-      "Top": 65.63816726076965
     },
     {
       "TableKey": "Tables\\af1bb3c4-c305-467a-ac53-a70a447626a2",
@@ -33,8 +26,8 @@
       "TableKey": "Tables\\fe877417-f25c-431b-a9e9-7f5b60625a51",
       "Height": 150,
       "Width": 200,
-      "Left": 0,
-      "Top": 398.7885946413901
+      "Left": 633,
+      "Top": 1051.78859464139
     },
     {
       "TableKey": "Tables\\1a98b2d6-b968-4f9b-9e37-5d7b31f7ae37",
@@ -47,8 +40,8 @@
       "TableKey": "Tables\\eace0d55-7fe9-4b68-b619-be7097adbe01",
       "Height": 150,
       "Width": 200,
-      "Left": 137.9951534990215,
-      "Top": 629.6069038652321
+      "Left": 628.9951534990215,
+      "Top": 890.6069038652321
     },
     {
       "TableKey": "Tables\\db5d68ef-43bb-44ea-be57-08d5dfbc2585",
@@ -61,22 +54,8 @@
       "TableKey": "Tables\\9eb435a8-80ea-469e-91b2-55cde3892d95",
       "Height": 150,
       "Width": 200,
-      "Left": 65.6364326173811,
-      "Top": 137.99560610326648
-    },
-    {
-      "TableKey": "Tables\\18dba5f3-76e2-4051-aadc-72f43b08785c",
-      "Height": 150,
-      "Width": 200,
-      "Left": 935.2437562170708,
-      "Top": 347.62176857773017
-    },
-    {
-      "TableKey": "Tables\\1d054fde-b8ec-4acb-ace6-819c4b89bd0f",
-      "Height": 150,
-      "Width": 200,
-      "Left": 1265.1475667847367,
-      "Top": 347.62176857773017
+      "Left": 0,
+      "Top": 21.995606103266482
     }
   ]
 }

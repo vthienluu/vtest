@@ -3423,8 +3423,36 @@
                   1
                 ]
               },
-              "queryMetadata": null,
-              "visualElements": null,
+              "queryMetadata": {
+                "Select": [
+                  {
+                    "Restatement": "Gender",
+                    "Name": "Gender.Gender",
+                    "Type": 2048
+                  },
+                  {
+                    "Restatement": "BadHires",
+                    "Name": "Sum(Employee.BadHires)",
+                    "Type": 1
+                  }
+                ]
+              },
+              "visualElements": [
+                {
+                  "DataRoles": [
+                    {
+                      "Name": "Series",
+                      "Projection": 0,
+                      "isActive": false
+                    },
+                    {
+                      "Name": "Y",
+                      "Projection": 1,
+                      "isActive": false
+                    }
+                  ]
+                }
+              ],
               "selects": [
                 {
                   "displayName": "Gender",
@@ -3870,8 +3898,47 @@
                   }
                 ]
               },
-              "queryMetadata": null,
-              "visualElements": null,
+              "queryMetadata": {
+                "Select": [
+                  {
+                    "Restatement": "Month",
+                    "Name": "select",
+                    "Type": 2048
+                  },
+                  {
+                    "Restatement": "AgeGroup",
+                    "Name": "AgeGroup.AgeGroup",
+                    "Type": 2048
+                  },
+                  {
+                    "Restatement": "Bad Hires YoY % Change",
+                    "Name": "Employee.Bad Hires YoY % Change",
+                    "Type": 1,
+                    "Format": "#,0.0 %;-#,0.0 %;#,0.0 %"
+                  }
+                ]
+              },
+              "visualElements": [
+                {
+                  "DataRoles": [
+                    {
+                      "Name": "Category",
+                      "Projection": 0,
+                      "isActive": true
+                    },
+                    {
+                      "Name": "Series",
+                      "Projection": 1,
+                      "isActive": false
+                    },
+                    {
+                      "Name": "Y",
+                      "Projection": 2,
+                      "isActive": false
+                    }
+                  ]
+                }
+              ],
               "selects": [
                 {
                   "displayName": "Month",
@@ -4361,8 +4428,56 @@
                   }
                 ]
               },
-              "queryMetadata": null,
-              "visualElements": null,
+              "queryMetadata": {
+                "Select": [
+                  {
+                    "Restatement": "Region",
+                    "Name": "select",
+                    "Type": 2048
+                  },
+                  {
+                    "Restatement": "VP",
+                    "Name": "select1",
+                    "Type": 2048
+                  },
+                  {
+                    "Restatement": "Ethnicity",
+                    "Name": "select2",
+                    "Type": 2048
+                  },
+                  {
+                    "Restatement": "BadHires",
+                    "Name": "select3",
+                    "Type": 1
+                  }
+                ]
+              },
+              "visualElements": [
+                {
+                  "DataRoles": [
+                    {
+                      "Name": "Category",
+                      "Projection": 0,
+                      "isActive": true
+                    },
+                    {
+                      "Name": "Category",
+                      "Projection": 1,
+                      "isActive": false
+                    },
+                    {
+                      "Name": "Series",
+                      "Projection": 2,
+                      "isActive": false
+                    },
+                    {
+                      "Name": "Y",
+                      "Projection": 3,
+                      "isActive": false
+                    }
+                  ]
+                }
+              ],
               "selects": [
                 {
                   "displayName": "Region",
@@ -4807,8 +4922,37 @@
                   }
                 ]
               },
-              "queryMetadata": null,
-              "visualElements": null,
+              "queryMetadata": {
+                "Select": [
+                  {
+                    "Restatement": "BadHire%ofActives",
+                    "Name": "Employee.BadHire%ofActives",
+                    "Type": 1,
+                    "Format": "0.00 %;-0.00 %;0.00 %"
+                  },
+                  {
+                    "Restatement": "AgeGroup",
+                    "Name": "AgeGroup.AgeGroup",
+                    "Type": 2048
+                  }
+                ]
+              },
+              "visualElements": [
+                {
+                  "DataRoles": [
+                    {
+                      "Name": "Category",
+                      "Projection": 1,
+                      "isActive": true
+                    },
+                    {
+                      "Name": "Y",
+                      "Projection": 0,
+                      "isActive": false
+                    }
+                  ]
+                }
+              ],
               "selects": [
                 {
                   "displayName": "BadHire%ofActives",
@@ -5054,8 +5198,26 @@
                   0
                 ]
               },
-              "queryMetadata": null,
-              "visualElements": null,
+              "queryMetadata": {
+                "Select": [
+                  {
+                    "Restatement": "Region",
+                    "Name": "BU.Region",
+                    "Type": 2048
+                  }
+                ]
+              },
+              "visualElements": [
+                {
+                  "DataRoles": [
+                    {
+                      "Name": "Values",
+                      "Projection": 0,
+                      "isActive": false
+                    }
+                  ]
+                }
+              ],
               "selects": [
                 {
                   "displayName": "Region",

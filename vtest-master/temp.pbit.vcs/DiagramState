@@ -9,13 +9,6 @@
       "Top": 728.2435371554603
     },
     {
-      "TableKey": "Tables\\521f2c2d-6773-496d-ba4e-e6c676ca87fa",
-      "Height": 150,
-      "Width": 200,
-      "Left": 629.6043713974768,
-      "Top": 557.2509552550432
-    },
-    {
       "TableKey": "Tables\\af1bb3c4-c305-467a-ac53-a70a447626a2",
       "Height": 150,
       "Width": 200,
@@ -40,8 +33,8 @@
       "TableKey": "Tables\\eace0d55-7fe9-4b68-b619-be7097adbe01",
       "Height": 150,
       "Width": 200,
-      "Left": 628.9951534990215,
-      "Top": 890.6069038652321
+      "Left": 628.9951534990214,
+      "Top": 890.6069038652322
     },
     {
       "TableKey": "Tables\\db5d68ef-43bb-44ea-be57-08d5dfbc2585",

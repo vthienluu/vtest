@@ -21,6 +21,8 @@
         <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1"/>
         <Entry Type="LoadedToAnalysisServices" Value="l1"/>
         <Entry Type="BufferNextRefresh" Value="l0"/>
+        <Entry Type="NavigationStepName" Value="sNavigation"/>
+        <Entry Type="ResultType" Value="sException"/>
       </StableEntries>
     </Item>
     <Item>
@@ -190,8 +192,8 @@
         <Entry Type="LastAnalysisServicesFormulaText" Value="s{&quot;IncludesReferencedQueries&quot;:true,&quot;RootFormulaText&quot;:&quot;let\r\n    Source = Sql.Database(\&quot;.\&quot;, \&quot;IP\&quot;, [Query=\&quot;SELECT dateadd(year, 1, d.date) Date#(lf)  ,Market BU#(lf)  ,[EmplID]#(lf)  ,iif([Gender]=\u0027M\u0027, \u0027C\u0027, \u0027D\u0027) Gender --  ,iif([Gender]=\u0027M\u0027, \u0027F\u0027, \u0027M\u0027) Gender#(lf)  ,[Age] - (2013 - year(d.date)) Age#(lf)  ,[EthnicGroup]#(lf)  ,[FP]#(lf)  ,dateadd(year, 1, [SenDate]) HireDate#(lf)  ,p.PayTypeID#(lf)  ,null [TermDate]#(lf)  ,null [TermReason]#(lf) FROM [IP].[HR].[AllEmps] E , [HR].[Date] d , [HR].[BU] b , hr.PayGroup p --, hr.TermReason t#(lf) where d.day = 1 and e.SenDate \u003c= d.MonthEndDate and isnull(e.termdate, \u00279999-01-01\u0027) \u003e= d.MonthEndDate and d.Date \u003c \u00272014-01-01\u0027#(lf)  and p.PayGroup = e.PayGroup#(lf)  and b.UNIT = e.Unit and [EmplID] % 2 = 0#(lf)union all#(lf)--seps#(lf)SELECT dateadd(year, 1, d.date) Date#(lf)    ,Market BU#(lf)      ,[EmplID]#(lf)      ,iif([Gender]=\u0027M\u0027, \u0027C\u0027, \u0027D\u0027) Gender#(lf)      ,[Age] - (2013 - year(d.date)) Age#(lf)      ,[EthnicGroup]#(lf)      ,[FP]#(lf)      ,dateadd(year, 1,[SenDate]) HireDate#(lf)      ,p.PayTypeID#(lf)      ,dateadd(year, 1, [TermDate]) [TermDate]#(lf)      ,t.[SeparationTypeID] [TermReason]#(lf)  FROM [IP].[HR].[AllEmps] E, [HR].[Date] d , [HR].[BU] b, hr.PayGroup p , hr.TermReason t#(lf) where d.day = 1 and e.TermDate \u003c= d.MonthEndDate and e.TermDate \u003e= d.MonthStartDate and d.Date \u003c \u00272014-01-01\u0027#(lf)  and p.PayGroup = e.PayGroup #(lf)  and t.[Term-Discharge]= e.[Term-Discharge]#(lf)  and b.UNIT = e.Unit and [EmplID] % 2 = 0\&quot;]),\r\n    #\&quot;Renamed Columns\&quot; = Table.RenameColumns(Source, {{\&quot;date\&quot;, \&quot;date\&quot;}, {\&quot;EmplID\&quot;, \&quot;EmplID\&quot;}, {\&quot;Gender\&quot;, \&quot;Gender\&quot;}, {\&quot;Age\&quot;, \&quot;Age\&quot;}, {\&quot;EthnicGroup\&quot;, \&quot;EthnicGroup\&quot;}, {\&quot;FP\&quot;, \&quot;FP\&quot;}, {\&quot;TermDate\&quot;, \&quot;TermDate\&quot;}, {\&quot;BU\&quot;, \&quot;BU\&quot;}, {\&quot;HireDate\&quot;, \&quot;HireDate\&quot;}, {\&quot;PayTypeID\&quot;, \&quot;PayTypeID\&quot;}, {\&quot;TermReason\&quot;, \&quot;TermReason\&quot;}}),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(#\&quot;Renamed Columns\&quot;, {{\&quot;date\&quot;, type datetime}, {\&quot;EmplID\&quot;, Int64.Type}, {\&quot;Gender\&quot;, type text}, {\&quot;Age\&quot;, Int64.Type}, {\&quot;EthnicGroup\&quot;, type text}, {\&quot;FP\&quot;, type text}, {\&quot;TermDate\&quot;, type datetime}, {\&quot;BU\&quot;, type text}, {\&quot;HireDate\&quot;, type datetime}, {\&quot;PayTypeID\&quot;, type text}, {\&quot;TermReason\&quot;, type text}})\r\nin\r\n    #\&quot;Changed Type\&quot;&quot;,&quot;ReferencedQueriesFormulaText&quot;:{}}"/>
         <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1"/>
         <Entry Type="LoadedToAnalysisServices" Value="l1"/>
-        <Entry Type="BufferNextRefresh" Value="l0"/>
         <Entry Type="ResultType" Value="sException"/>
+        <Entry Type="BufferNextRefresh" Value="l0"/>
       </StableEntries>
     </Item>
     <Item>
@@ -294,6 +296,8 @@
         <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1"/>
         <Entry Type="LoadedToAnalysisServices" Value="l1"/>
         <Entry Type="BufferNextRefresh" Value="l0"/>
+        <Entry Type="NavigationStepName" Value="sNavigation"/>
+        <Entry Type="ResultType" Value="sTable"/>
       </StableEntries>
     </Item>
     <Item>
@@ -314,6 +318,82 @@
       <ItemLocation>
         <ItemType>Formula</ItemType>
         <ItemPath>Section1/AgeGroup/Changed%20Type</ItemPath>
+      </ItemLocation>
+      <StableEntries/>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/AgeGroup%20%282%29</ItemPath>
+      </ItemLocation>
+      <StableEntries>
+        <Entry Type="IsPrivate" Value="l0"/>
+        <Entry Type="LastAnalysisServicesFormulaText" Value="s{&quot;IncludesReferencedQueries&quot;:true,&quot;RootFormulaText&quot;:&quot;let\r\n    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\&quot;i45WMlTSUYopNTAwTjY2UIrViVYyAgoYG+iaWIJ5xkCeqYG2UmwsAA==\&quot;, BinaryEncoding.Base64), Compression.Deflate))),\r\n    #\&quot;Renamed Columns\&quot; = Table.RenameColumns(Source, {{\&quot;Column1\&quot;, \&quot;AgeGroupID\&quot;}, {\&quot;Column2\&quot;, \&quot;AgeGroup\&quot;}}),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(#\&quot;Renamed Columns\&quot;, {{\&quot;AgeGroupID\&quot;, Int64.Type}, {\&quot;AgeGroup\&quot;, type text}})\r\n in\r\n    #\&quot;Changed Type\&quot;&quot;,&quot;ReferencedQueriesFormulaText&quot;:{}}"/>
+        <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1"/>
+        <Entry Type="LoadedToAnalysisServices" Value="l1"/>
+        <Entry Type="ResultType" Value="sTable"/>
+        <Entry Type="NavigationStepName" Value="sNavigation"/>
+        <Entry Type="FillErrorCode" Value="sUnknown"/>
+        <Entry Type="FillLastUpdated" Value="d2017-12-08T15:36:05.2563294Z"/>
+        <Entry Type="BufferNextRefresh" Value="l0"/>
+      </StableEntries>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/AgeGroup%20%282%29/Source</ItemPath>
+      </ItemLocation>
+      <StableEntries/>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/AgeGroup%20%282%29/Renamed%20Columns</ItemPath>
+      </ItemLocation>
+      <StableEntries/>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/AgeGroup%20%282%29/Changed%20Type</ItemPath>
+      </ItemLocation>
+      <StableEntries/>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/AgeGroup%20%283%29</ItemPath>
+      </ItemLocation>
+      <StableEntries>
+        <Entry Type="IsPrivate" Value="l0"/>
+        <Entry Type="LastAnalysisServicesFormulaText" Value="s{&quot;IncludesReferencedQueries&quot;:true,&quot;RootFormulaText&quot;:&quot;let\r\n    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\&quot;i45WMlTSUYopNTAwTjY2UIrViVYyAgoYG+iaWIJ5xkCeqYG2UmwsAA==\&quot;, BinaryEncoding.Base64), Compression.Deflate))),\r\n    #\&quot;Renamed Columns\&quot; = Table.RenameColumns(Source, {{\&quot;Column1\&quot;, \&quot;AgeGroupID\&quot;}, {\&quot;Column2\&quot;, \&quot;AgeGroup\&quot;}}),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(#\&quot;Renamed Columns\&quot;, {{\&quot;AgeGroupID\&quot;, Int64.Type}, {\&quot;AgeGroup\&quot;, type text}})\r\n in\r\n    #\&quot;Changed Type\&quot;&quot;,&quot;ReferencedQueriesFormulaText&quot;:{}}"/>
+        <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1"/>
+        <Entry Type="LoadedToAnalysisServices" Value="l1"/>
+        <Entry Type="ResultType" Value="sTable"/>
+        <Entry Type="NavigationStepName" Value="sNavigation"/>
+        <Entry Type="FillLastUpdated" Value="d2017-12-08T15:36:09.2157253Z"/>
+        <Entry Type="FillErrorCode" Value="sUnknown"/>
+        <Entry Type="BufferNextRefresh" Value="l0"/>
+      </StableEntries>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/AgeGroup%20%283%29/Source</ItemPath>
+      </ItemLocation>
+      <StableEntries/>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/AgeGroup%20%283%29/Renamed%20Columns</ItemPath>
+      </ItemLocation>
+      <StableEntries/>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/AgeGroup%20%283%29/Changed%20Type</ItemPath>
       </ItemLocation>
       <StableEntries/>
     </Item>
